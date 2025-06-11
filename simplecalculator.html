@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <style>
+        input{
+            margin-top: 10px;
+            width: 200px;
+            height: 20px;
+        }
+        .one{
+            margin-left: 500px
+        }
+        button{
+            margin-left: 5px;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        h2{
+
+            padding-left: 550px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>SIMPLE CALCULATOR</h1>
+    <input type="text" id="h" style="margin-left: 300px;"> Enter 1st value
+    <input type="text" id="n" style="margin-left: 50px;">  Enter 2nd value<br><br>
+    <div class="one">
+    <button onclick="add()">Addition</button>
+    <button onclick="sub()">Subtraction</button>
+    <button onclick="mul()">Multiplication</button>
+    <button onclick="div()">Division</button>
+    </div>
+    <h2 id="o"></h2>
+</body>
+
+
+
+<script>
+    function add(){
+        let x=Number(document.getElementById("h").value);
+        let y=Number(document.getElementById("n").value);
+        document.getElementById("o").innerHTML=x+y;
+    }
+    function sub(){
+        let x=Number(document.getElementById("h").value);
+        let y=Number(document.getElementById("n").value);
+        document.getElementById("o").innerHTML=x-y;
+    }
+    function mul(){
+        let x=Number(document.getElementById("h").value);
+        let y=Number(document.getElementById("n").value);
+        document.getElementById("o").innerHTML=x*y;
+    }
+    function div(){
+        let x=Number(document.getElementById("h").value);
+        let y=Number(document.getElementById("n").value);
+        document.getElementById("o").innerHTML=x/y;
+    }
+
+</script>
+</html>
