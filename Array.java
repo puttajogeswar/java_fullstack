@@ -153,24 +153,6 @@ System.out.println(b[j]);
 
 //array-7
 
-/**import java.util.Scanner;
-public class Array{
-public static void main(String[] args){
-Scanner s=new Scanner(System.in);
-int[] a={5,3,4,2,1,};
-System.out.println("Enter you element ");
-int num=s.nextInt();
-System.out.println("Enter you specified position ");
-int position=s.nextInt();
-for( int i=position;i<5;i++){
-a[i+1]=a[i];
-}
-a[position]=num;
-for(int i=0;i<5;i++){
-System.out.println(a[i]);
-}
-}
-} wrong*/
 
 //array-8
 
